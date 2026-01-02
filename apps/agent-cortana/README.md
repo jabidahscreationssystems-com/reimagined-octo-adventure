@@ -115,6 +115,20 @@ Agent Cortana can be deployed to any platform that supports Go applications:
 - **Cloud Platforms**: Deploy to AWS, GCP, Azure, or other cloud providers
 - **Serverless**: Adapt for serverless platforms like AWS Lambda or Google Cloud Functions
 
+For detailed deployment instructions, see [DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
+## Security
+
+Security is a top priority for Agent Cortana. Before deploying to production:
+
+- Review the [Security Best Practices](docs/SECURITY.md)
+- Implement webhook signature validation
+- Use HTTPS with valid certificates
+- Store secrets securely
+- Enable monitoring and alerting
+
+**Note**: The current implementation includes a TODO for webhook signature validation which must be implemented before production use.
+
 ## Contributing
 
 Contributions are welcome! Please follow the standard GitHub flow:
@@ -123,6 +137,8 @@ Contributions are welcome! Please follow the standard GitHub flow:
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
+
+For development guidelines, see [DEVELOPMENT.md](docs/DEVELOPMENT.md).
 
 ## License
 

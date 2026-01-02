@@ -40,6 +40,10 @@ func HandleWebhook(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// TODO: Validate webhook signature using WEBHOOK_SECRET
+	// signature := r.Header.Get("X-Hub-Signature-256")
+	// This is critical for production to ensure webhooks come from GitHub
+
 	// Get the event type from the header
 	eventType := r.Header.Get("X-GitHub-Event")
 	deliveryID := r.Header.Get("X-GitHub-Delivery")
