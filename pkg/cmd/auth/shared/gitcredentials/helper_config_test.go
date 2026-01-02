@@ -24,6 +24,11 @@ func withIsolatedGitConfig(t *testing.T) {
 
 	// And disable git reading the system config
 	t.Setenv("GIT_CONFIG_NOSYSTEM", "true")
+
+	// Also isolate from the local repository config by setting GIT_DIR to a temporary directory
+	// This prevents git from finding the .git directory of the current repository
+	gitDir := filepath.Join(tmpDir, ".git")
+	t.Setenv("GIT_DIR", gitDir)
 }
 
 func configureTestCredentialHelper(t *testing.T, key string) {
