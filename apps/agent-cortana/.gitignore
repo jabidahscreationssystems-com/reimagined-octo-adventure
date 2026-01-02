@@ -1,0 +1,16 @@
+# Environment files
+.env
+
+# Binary files
+agent-cortana
+*.exe
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.log
+tmp/

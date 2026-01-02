@@ -95,6 +95,19 @@ There are two common ways to verify a downloaded release, depending on whether `
   Verified OK
   ```
 
+## Agent Cortana - GitHub App
+
+Agent Cortana is an intelligent GitHub agent built on top of the GitHub CLI ecosystem. It provides automated workflows and enhanced developer productivity through GitHub App integration.
+
+### Features
+
+- **Webhook Integration**: Responds to GitHub events (issues, pull requests, reviews, etc.)
+- **Automated Workflows**: Streamlines common development tasks
+- **GitHub API Integration**: Seamlessly integrates with GitHub's API
+- **Extensible Design**: Built with modularity for easy customization
+
+For more information, see the [Agent Cortana documentation](apps/agent-cortana/README.md).
+
 ## Comparison with hub
 
 For many years, [hub](https://github.com/github/hub) was the unofficial GitHub CLI tool. `gh` is a new project that helps us explore
